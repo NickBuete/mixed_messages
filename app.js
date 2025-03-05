@@ -1,5 +1,15 @@
+import chalk from 'chalk';
 // Mixed messages project
 console.log('This is the Mixed Messages project');
+console.log(chalk.blue(`
++================================================+
+|                                                |
+|  ╦═╗┌─┐┌┐┌┌┬┐┌─┐┌┬┐  ╔╦╗┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐  |
+|  ╠╦╝├─┤│││ │││ ││││  ║║║├┤ └─┐└─┐├─┤│ ┬├┤ └─┐  |
+|  ╩╚═┴ ┴┘└┘─┴┘└─┘┴ ┴  ╩ ╩└─┘└─┘└─┘┴ ┴└─┘└─┘└─┘  |
+|                                                |
++================================================+`));
+
 // TODO: Create a random message when the program runs
 
 // TODO: Creat an array of messages
@@ -18,6 +28,7 @@ const messages = [
 // TODO: Create a function that generates a random message
 const randomMessage = () => {
     const message = messages[Math.floor(Math.random() * messages.length)];
+    console.log()
     console.log(message);
 }
 
